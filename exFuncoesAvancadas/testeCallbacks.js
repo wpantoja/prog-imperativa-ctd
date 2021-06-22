@@ -2,11 +2,15 @@
 // Teste Callbacks
 
 const somar = (numeroA, numeroB) => numeroA + numeroB;
+const subtrair = (numeroA, numeroB) => numeroA - numeroB;
 
 const calculadora = (numeroA, numeroB, operacao) => operacao(numeroA, numeroB);
 
 console.log(calculadora(20, 10, somar));
-console.log(calculadora(20, 10, (numeroA, numeroB) => numeroA-numeroB)); // Arrow function declarada dentro do terceiro parâmetro
+
+console.log(calculadora(45,5,subtrair));
+
+console.log(calculadora(20, 10, (numeroA, numeroB) => numeroA/numeroB)); // Arrow function declarada dentro do terceiro parâmetro
 
 // Função bomDia
 
